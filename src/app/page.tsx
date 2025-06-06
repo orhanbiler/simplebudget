@@ -15,15 +15,19 @@ export default function PrivacyPolicy() {
           <div className={styles.glanceGrid}>
             <div className={styles.glanceItem}>
               <h3>No data collection</h3>
+              <p>Your data never leaves your device</p>
             </div>
             <div className={styles.glanceItem}>
-              <h3>No internet connection required</h3>
+              <h3>No internet required</h3>
+              <p>Works completely offline</p>
             </div>
             <div className={styles.glanceItem}>
-              <h3>No tracking or analytics</h3>
+              <h3>No tracking</h3>
+              <p>Zero analytics or monitoring</p>
             </div>
             <div className={styles.glanceItem}>
-              <h3>Complete offline functionality</h3>
+              <h3>Local storage only</h3>
+              <p>Everything stays on your phone</p>
             </div>
           </div>
         </section>

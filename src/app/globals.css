@@ -2,13 +2,23 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --primary-color: #3366cc;
-  --secondary-color: #66a3ff;
-  --accent-color: #0052cc;
-  --text-color: #333;
-  --light-gray: #f5f5f5;
-  --medium-gray: #e0e0e0;
-  --dark-gray: #666;
+  --primary-color: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary-color: #7C3AED;
+  --accent-color: #EC4899;
+  --text-color: #1F2937;
+  --text-secondary: #6B7280;
+  --light-gray: #F9FAFB;
+  --medium-gray: #E5E7EB;
+  --dark-gray: #4B5563;
+  --success-color: #10B981;
+  --warning-color: #F59E0B;
+  --error-color: #EF4444;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --border-radius: 0.75rem;
+  --border-radius-lg: 1rem;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -21,26 +31,33 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--text-color);
   line-height: 1.6;
+  background: linear-gradient(135deg, #F3F4F6 0%, #FFFFFF 100%);
+  min-height: 100vh;
 }
 
 a {
   color: var(--primary-color);
   text-decoration: none;
+  transition: var(--transition);
+  font-weight: 500;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--primary-hover);
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: var(--text-color);
 }
 
 p {

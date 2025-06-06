@@ -3,7 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Simple Budget - Privacy Policy",
-  description: "Privacy Policy for Simple Budget iOS app",
+  description: "Privacy Policy for Simple Budget iOS app - Your financial data stays on your device with zero data collection",
+  keywords: "Simple Budget, privacy policy, iOS app, budget tracking, financial privacy, data security",
+  authors: [{ name: "Simple Budget Team" }],
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#4F46E5",
 };
 
 export default function RootLayout({
@@ -13,6 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      </head>
       <body>{children}</body>
     </html>
   );
